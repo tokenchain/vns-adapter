@@ -1,4 +1,4 @@
-module github.com/blocktree/vns-adapter
+module VTrader/vns-adapter
 
 go 1.12
 
