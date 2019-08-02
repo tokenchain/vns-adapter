@@ -276,9 +276,9 @@ func (this *EthTransactionDecoder) CreateSimpleRawTransaction(wrapper openwallet
 		a_amount, _ := decimal.NewFromString(addrBalanceArray[i].Balance)
 		b_amount, _ := decimal.NewFromString(addrBalanceArray[j].Balance)
 		if a_amount.LessThan(b_amount) {
-			return true
-		} else {
 			return false
+		} else {
+			return true
 		}
 	})
 
